@@ -1,0 +1,144 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>personal portfolio website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <image src="logo1.jpg" class="logo"></image>
+                <ul>
+                    <li><a href="header">HOME</a></li>
+                    <li><a href="about">ABOUT</a></li>
+                    <li><a href="service">SERVICES</a></li>
+                    <li><a href="#">PORTFOLIO</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>AI Creater</p>
+                <h1>Hi Earthlings, I'm <span>Ada Lovelace</span> <br>From  Virtual Land</h1>
+            </div>
+        </div>
+    </div>
+    <div class="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <image src="cover2.png"></image>
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Artificial Intelligence Engineer
+                        Innovative Artificial Intelligence Engineer with 3+ years of experience in application design, development, testing, and deployment. Highly experienced in writing codes and algorithms as well as building complex neural networks through various programming languages. Possess an unbridled passion for Artificial Intelligence with comprehensive knowledge of machine learning concepts and other related technologies. Unmatched abilities to identify, understand, and translate program requirements into sustainable, advanced technical solutions through C#, C++, JavaScript, Python, and other programs for continuous improvement of Al technologies.</p>
+                     <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('SKILLS')">SKILLS</p>
+                        <p class="tab-links" onclick="opentab('EXPERIENCE')">EXPERIENCE</p>
+                        <p class="tab-links" onclick="opentab('EDUCATION')">EDUCATION</p>
+                     </div>
+                     <div class="tab-contents active-tab" id="SKILLS">
+                        <ul>
+                            <li><span>AI</span><br>Database Modeling, Data Warehousing And Data Processing </li>
+                            <li><span>WEB DESINGING</span><br>Designing Webpage Or Application Interfaces</li>
+                            <li><span>WEB DEVELOPMENT</span><br>Desiging Website Or Web Application</li>
+                            <li><span>FULLSTACK DEVELOPMENT</span><br>Desinging Applications</li>
+                        </ul>
+                     </div>
+                     <div class="tab-contents" id="EXPERIENCE">
+                        <ul>
+                            <li><span>2023 - current</span><br>AI  Training at ET Institute </li>
+                            <li><span>2020 </span><br>Team Lead at STAR APP LLC</li>
+                            <li><span>2019</span><br>Design Executive at COIN DIGITAL Ltd</li>
+                            <li><span>Current</span><br>Free Lancer</li>
+                        </ul>
+                     </div>
+                     <div class="tab-contents" id="EDUCATION">
+                        <ul>
+                            <li><span>2018</span><br>Ai Training at ET Institute</li>
+                            <li><span>2018</span><br>MBA From MIT VIRTUALLAND</li>
+                            <li><span>2016</span><br>BCA From ISM VIRTUALLAND.</li>
+                        </ul>
+                     </div> 
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">MY SERVICES</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fas fa-code"></i>
+                    <h2>AI</h2>
+                    <p>Artificial intelligence is the intelligence of machines or software, as opposed to the intelligence of humans or animals. It is also the field of study in computer science that develops and studies intelligent machines. "AI" may also refer to the machines themselves</p>
+                    <a href="#">LEARN MORE</a>
+                </div>
+                <div>
+                    <i class="fas fa-crop-alt"></i>
+                    <h2>WEB DESIGN</h2>
+                    <p>Web designing is the process of planning, conceptualizing, and implementing the plan for designing a website in a way that is functional and offers a good user experience. User experience is central to the web designing process. Websites have an array of elements presented in ways that make them easy to navigate.</p>
+                    <a href="#">LEARN MORE</a>
+                </div>
+                <div>
+                    <i class="fab fa-app-store"></i>
+                    <h2>APP DESIGN</h2>
+                    <p>App design is the look and feel of a mobile application. This includes all of the visual elements and interactive elements that impact how the app functions. Mobile app design combines two concepts—UI and UX. The user interface (UI) encompasses the app's look and feel.</p>
+                    <a href="#">LEARN MORE</a>
+                </div>
+                
+              
+            </div>
+        </div>
+    </div>
+    <div class="portfolio">
+        <div class="container">
+            <h1 class="sub-title">MY WORK</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="phone1.jpg">
+                    <div class="layer">
+                        <h3>SOCIAL MEDIA APP</h3>
+                        <P>Every web based application that support information publishing and sharing the building of personal profiles connecting to a community and searching with the community</P>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="hn.png.jpg">
+                    <div class="layer">
+                        <h3>MUSIC APP</h3>
+                        <P>Music is art of arranging sound to create some combination form , harmoney,melody,rythm</P>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="shop.jpg">
+                    <div class="layer">
+                        <h3>ONLINE SHOPPING APP</h3>
+                        <P>it is a form of electronic commerce which allows consumer to directly buy good products</P>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+        </script>
+</body>
+</html>
